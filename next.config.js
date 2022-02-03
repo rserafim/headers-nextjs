@@ -10,14 +10,22 @@ module.exports = {
           },
         ],
       },
+    ]
+  },
+  async redirects() {
+    return [
+      // if the header `x-redirect-me` is present,
+      // this redirect will be applied
       {
-        source: '/news/:id',
-        headers: [
+        source: '/about',
+        has: [
           {
-            key: 'X-News-Custom-Header',
-            value: 'news_header_value',
+            type: 'header',
+            key: 'X-About-Custom-Header',
           },
         ],
+        permanent: false,
+        destination: '/401',
       },
     ]
   },
