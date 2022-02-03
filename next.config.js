@@ -21,7 +21,7 @@ module.exports = {
         has: [
           {
             type: 'header',
-            key: 'X-About-Custom-Header',
+            key: 'x-about-custom-header',
           },
         ],
         permanent: false,
