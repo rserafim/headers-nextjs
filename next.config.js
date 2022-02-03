@@ -22,6 +22,7 @@ module.exports = {
           {
             type: 'header',
             key: 'x-about-custom-header',
+            value: 'about_header_value',
           },
         ],
         permanent: false,
