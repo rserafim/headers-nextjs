@@ -1,17 +1,4 @@
 module.exports = {
-  async headers() {
-    return [
-      {
-        source: '/about',
-        headers: [
-          {
-            key: 'X-About-Custom-Header',
-            value: 'about_header_value',
-          },
-        ],
-      },
-    ]
-  },
   async redirects() {
     return [
       // if the header `x-redirect-me` is present,
@@ -21,8 +8,8 @@ module.exports = {
         has: [
           {
             type: 'header',
-            key: 'x-about-custom-header',
-            value: 'about_header_value',
+            key: 'User-Agent',
+            value: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36',
           },
         ],
         permanent: false,
