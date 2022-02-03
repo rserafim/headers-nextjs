@@ -3,7 +3,7 @@ import styles from '../styles.module.css'
 
 const Code = (p) => <code className={styles.inlineCode} {...p} />
 
-export default function About() {
+export default function About({ data }) {
   return (
     <div className={styles.container}>
       <div className={styles.card}>
@@ -17,6 +17,7 @@ export default function About() {
           To check the response headers of this page, open the Network tab
           inside your browser inspector.
         </p>
+        <h1>hour: {data.hour}</h1>
 
         <Link href="/">
           <a> &larr; Back home</a>
@@ -24,4 +25,15 @@ export default function About() {
       </div>
     </div>
   )
+}
+
+
+export async function getServerSideProps() {
+  let d = new Date();
+  let horaFormatada = d.getHours().toString().padStart(2, '0') + ':' +
+    d.getMinutes().toString().padStart(2, '0');
+  const data = {
+    hour: horaFormatada
+  }
+  return { props: { data } }
 }
