@@ -1,0 +1,26 @@
+{
+  "redirects": [
+    {
+      "source": "/about",
+      "has": [
+        {
+          "type": "header",
+          "key": "User-Agent",
+          "value": "Mozilla/5.0 (compatible; BLEXBot/1.0; +http://webmeup-crawler.com/)"
+        },
+        {
+          "type": "header",
+          "key": "User-Agent",
+          "value": "Iframely/1.3.1 (+https://iframely.com/docs/about) Atlassian"
+        },
+        {
+          "type": "header",
+          "key": "X-About-Custom-Header",
+          "value": "about_header_value"
+        }
+      ],
+      "destination": "/401",
+      "permanent": false
+    }
+  ]
+}
