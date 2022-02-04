@@ -7,7 +7,7 @@ module.exports = {
           {
             type: 'header',
             key: 'x-powered-by',
-            key: 'Next.js',
+            value: 'Next.js',
           },
         ],
         permanent: false,
