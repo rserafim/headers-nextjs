@@ -5,8 +5,8 @@
       "has": [
         {
           "type": "header",
-          "key": "x-powered-by",
-          "value": "Next.js"
+          "key": "x-matched-path",
+          "value": "/about"
         }
       ],
       "destination": "/401",
