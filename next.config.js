@@ -6,8 +6,8 @@ module.exports = {
         has: [
           {
             type: 'header',
-            key: 'x-matched-path',
-            value: '/about',
+            key: 'x-powered-by',
+            value: 'Next.js',
           },
         ],
         permanent: false,
