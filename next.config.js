@@ -43,7 +43,14 @@ module.exports = {
             key: 'User-Agent',
             value:
               '(.*woorankreview.*)',
-          },
+          }
+        ],
+        "destination": "/401",
+        "permanent": false
+      },
+      {
+        "source": "/about",
+        "has": [
           {
             type: 'header',
             key: 'User-Agent',
@@ -53,6 +60,7 @@ module.exports = {
         ],
         "destination": "/401",
         "permanent": false
-      }]
+      }
+    ]
   }
 }
