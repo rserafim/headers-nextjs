@@ -24,15 +24,15 @@ module.exports = {
   async redirects() {
     return [
       {
-        "source": "/abc",
+        "source": "/xyz",
         "has": [
           {
             "type": "header",
             "key": "x-vercel-ip-country",
-            "value": "GB"
+            "value": "BR"
           }
         ],
-        "destination": "/",
+        "destination": "/401",
         "permanent": false
       },
       {
