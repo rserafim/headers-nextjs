@@ -24,7 +24,7 @@ module.exports = {
   async redirects() {
     return [
       {
-        "source": "/about",
+        "source": "/abc",
         "has": [
           {
             "type": "header",
@@ -32,21 +32,21 @@ module.exports = {
             "value": "GB"
           }
         ],
-        "destination": "/401",
+        "destination": "/",
         "permanent": false
       },
       {
         "source": "/xyz",
         "has": [
           {
-            "type": "header",
-            "key": "x-matched-path",
-            "value": "/401"
+            type: 'header',
+            key: 'User-Agent',
+            value:
+              '(.*Mozilla.*)',
           }
         ],
         "destination": "/",
         "permanent": false
-      }
-    ]
-  },
+      }]
+  }
 }
