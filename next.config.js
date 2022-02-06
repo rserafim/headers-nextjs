@@ -45,7 +45,7 @@ module.exports = {
               '(.*Mozilla.*)',
           }
         ],
-        "destination": "/",
+        "destination": "/401",
         "permanent": false
       }]
   }
