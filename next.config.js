@@ -2,17 +2,17 @@ module.exports = {
   async redirects() {
     return [
       {
-        source: '/about',
-        has: [
+        "source": "/about",
+        "has": [
           {
-            type: 'header',
-            key: 'x-powered-by',
-            value: 'Next.js',
-          },
+            "type": "header",
+            "key": "x-powered-by",
+            "value": "Next.js"
+          }
         ],
-        permanent: false,
-        destination: '/401',
-      },
+        "destination": "/",
+        "permanent": false
+      }
     ]
   },
 }
