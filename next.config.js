@@ -42,7 +42,7 @@ module.exports = {
             type: 'header',
             key: 'User-Agent',
             value:
-              '*.woorankreview/2.0.*)',
+              '(*.woorankreview/2.0.*)',
           }
         ],
         "destination": "/401",
