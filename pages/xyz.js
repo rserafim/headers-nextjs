@@ -7,7 +7,7 @@ export default function About({ data }) {
   return (
     <div className={styles.container}>
       <div className={styles.card}>
-        <h1>Path: /about</h1>
+        <h1>Path: /xyz</h1>
         <hr className={styles.hr} />
 
         <h1>hour: {data.hour}</h1>

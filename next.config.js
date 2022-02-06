@@ -39,9 +39,9 @@ module.exports = {
         "source": "/xyz",
         "has": [
           {
-            "type": 'header',
-            "key": 'User-Agent',
-            "value": 'Mozilla/5.0'
+            "type": "header",
+            "key": "x-matched-path",
+            "value": "/401"
           }
         ],
         "destination": "/",
