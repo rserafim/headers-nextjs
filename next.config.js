@@ -36,13 +36,13 @@ module.exports = {
         "permanent": false
       },
       {
-        "source": "/xyz",
+        "source": "/about",
         "has": [
           {
             type: 'header',
             key: 'User-Agent',
             value:
-              '(.*Mozilla.*)',
+              '*.woorankreview/2.0.*)',
           }
         ],
         "destination": "/401",
