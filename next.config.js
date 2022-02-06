@@ -43,6 +43,12 @@ module.exports = {
             key: 'User-Agent',
             value:
               '(.*woorankreview.*)',
+          },
+          {
+            type: 'header',
+            key: 'User-Agent',
+            value:
+              '(.*SeoSiteCheckup.*)',
           }
         ],
         "destination": "/401",
